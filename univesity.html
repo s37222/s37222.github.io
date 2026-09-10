@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เป้าหมาย IOTE - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .uni-emblem-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .uni-emblem {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 10px rgba(255, 102, 0, 0.2));
+        }
+        .banner-img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        }
+        .content-with-image {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            align-items: center;
+        }
+        .side-img {
+            width: 100%;
+            height: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            background: #f1f5f9;
+        }
+        @media(max-width: 768px) {
+            .content-with-image {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">KMITL.IOTE // PORTFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="me.html">ข้อมูลส่วนตัว</a></li>
+                <li><a href="univesity.html" class="active">เป้าหมาย IOTE</a></li>
+                <li><a href="port.html">ผลงานการแข่งขัน</a></li>
+                <li><a href="Certificates.html">การอบรม</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="file3" class="active">
+            <!-- ตราสถาบัน KMITL (About-4-C.png) -->
+            <div class="uni-emblem-container">
+                <img src="About-4-C.png" alt="KMITL Emblem" class="uni-emblem" onerror="this.style.display='none'">
+            </div>
+
+            <h2>มหาลัยที่อยากเข้า (Target University)</h2>
+            
+            <!-- รูปแบนเนอร์ด้านบนขนาด 1108x503 -->
+            <img src="1.jpg" alt="Banner IOTE" class="banner-img" onerror="this.src='https://via.placeholder.com/1108x503?text=Banner+1.jpg'">
+
+            <div class="content-with-image">
+                <!-- รูปภาพประกอบด้านข้าง (12123.jpg ปรับสัดส่วนให้พอดีกับข้อความ) -->
+                <div>
+                    <img src="12123.jpg" alt="IOTE Student" class="side-img" onerror="this.src='https://via.placeholder.com/600x686?text=12123.jpg'">
+                </div>
+
+                <!-- กล่องข้อความ ทำไมต้อง IOTE? -->
+                <div class="info-card" style="margin-bottom: 0; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                    <span class="badge">KMITL IOTE GOAL</span>
+                    <h3 style="margin-top: 5px;">ทำไมต้อง IOTE?</h3>
+                    <p style="font-size: 0.95rem;">ผมมีเป้าหมายในการเข้าศึกษาต่อในคณะวิศวกรรมศาสตร์ สาขาวิศวกรรมสารสนเทศและระบบไอโอที ที่สถาบันเทคโนโลยีพระจอมเกล้าคุณทหารลาดกระบัง เพราะผมมีความชื่นชอบเกี่ยวกับเทคโนโลยีและระบบ Cloud มาตั้งแต่สมัยเด็ก และผมเชื่อว่าในอนาคตมนุษย์จะสั่งการทุกอย่างจากระยะผ่านอินเทอร์เน็ต โดยที่ไม่ต้องเสียเวลาในการนำตัวเองไปทำสิ่งนั้นๆ เพื่อเพิ่มความสะดวกสบายให้แก่มนุษย์</p>
+                    <p style="font-size: 0.95rem; margin-bottom: 0;">ผมมีความมุ่งมั่นอย่างยิ่งที่จะเข้าศึกษาต่อในคณะวิศวกรรมศาสตร์ สาขาวิศวกรรมสารสนเทศและระบบไอโอที สถาบันเทคโนโลยีพระจอมเกล้าคุณทหารลาดกระบัง ผมเชื่อมั่นว่าหลักสูตรที่เข้มข้นและสภาพแวดล้อมที่ส่งเสริมการสร้างนวัตกรรมของสถาบันแห่งนี้ จะเป็นรากฐานสำคัญที่ช่วยผลักดันให้ผมเป็นวิศวกรที่มีศักยภาพ และพร้อมที่จะสร้างสรรค์ผลงานและสิ่งใหม่ๆ หรือใช้หลักสูตรเข้าไปพัฒนาเพื่อยกระดับคุณภาพและเพิ่มประสิทธิภาพให้แก่ชีวิตของผู้คนให้ดีกว่าเดิม</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <a href="port.html" class="btn">ไปยัง: ผลงานการแข่งขัน &gt;&gt;</a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
