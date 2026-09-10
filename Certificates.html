@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การอบรม - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">KMITL.IOTE // PORTFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="me.html">ข้อมูลส่วนตัว</a></li>
+                <li><a href="univesity.html">เป้าหมาย IOTE</a></li>
+                <li><a href="port.html">ผลงานการแข่งขัน</a></li>
+                <li><a href="Certificates.html" class="active">การอบรม</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="file5" class="active">
+            <h2>การอบรม (Certificates & Workshops)</h2>
+            <p style="margin-bottom: 20px; font-size: 0.95rem;">*คลิกที่การอบรมแต่ละรายการเพื่อดูรูปภาพและรายละเอียดแบบเต็มจอ</p>
+            <div class="timeline-container" style="margin-top: 20px;">
+                <div class="timeline-row left">
+                    <div class="comp-card" onclick="openModal('train1')">
+                        <img src="Certificate.png" alt="Cybersecurity Workshop" class="card-img-preview" onerror="this.src='https://via.placeholder.com/400x280?text=Certificate.png'">
+                        <span class="badge">WORKSHOP</span>
+                        <h3>Workshop ความปลอดภัยทางไซเบอร์</h3>
+                        <p>ทักษะความปลอดภัยทางไซเบอร์เบื้องต้น</p>
+                        <p style="color: var(--primary-color); margin-top: 8px; font-size: 0.85rem;">คลิกเพื่อดูภาพทั้งหมด &gt;&gt;</p>
+                    </div>
+                </div>
+                <div class="timeline-row right">
+                    <div class="comp-card" onclick="openModal('train2')">
+                        <img src="Certificate (2).png" alt="Space Engineering" class="card-img-preview" onerror="this.src='https://via.placeholder.com/400x280?text=Certificate+(2).png'">
+                        <span class="badge">WORKSHOP</span>
+                        <h3>Workshop วิศวกรรมอวกาศใกล้ตัว</h3>
+                        <p>เรียนรู้งานด้านวิศวกรรมอวกาศและเทคโนโลยี</p>
+                        <p style="color: var(--primary-color); margin-top: 8px; font-size: 0.85rem;">คลิกเพื่อดูภาพทั้งหมด &gt;&gt;</p>
+                    </div>
+                </div>
+                <div class="timeline-row left">
+                    <div class="comp-card" onclick="openModal('train3')">
+                        <img src="อบรม Programmable Logic Controller_page.jpg" alt="PLC Training" class="card-img-preview" onerror="this.src='https://via.placeholder.com/400x280?text=PLC+Training'">
+                        <span class="badge">TRAINING</span>
+                        <h3>Programmable Logic Controller (PLC)</h3>
+                        <p>การเขียนโปรแกรมควบคุมระบบอุตสาหกรรม</p>
+                        <p style="color: var(--primary-color); margin-top: 8px; font-size: 0.85rem;">คลิกเพื่อดูภาพทั้งหมด &gt;&gt;</p>
+                    </div>
+                </div>
+                <div class="timeline-row right">
+                    <div class="comp-card" onclick="openModal('train4')">
+                        <img src="internet.jpg" alt="Internet Mikrotik" class="card-img-preview" onerror="this.src='https://via.placeholder.com/400x280?text=internet.jpg'">
+                        <span class="badge">TRAINING</span>
+                        <h3>Internet Mikrotik 2025</h3>
+                        <p>การจัดการระบบเครือข่ายอินเทอร์เน็ต</p>
+                        <p style="color: var(--primary-color); margin-top: 8px; font-size: 0.85rem;">คลิก/แตะเพื่อดูภาพทั้งหมด &gt;&gt;</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="display: flex; gap: 15px; margin-top: 25px; flex-wrap: wrap;">
+                <a href="port.html" class="btn" style="background: var(--text-dim);">ย้อนกลับ</a>
+                <a href="contact.html" class="btn" style="margin-top: 20px;">ไปยัง: ติดต่อ &gt;&gt;</a>
+            </div>
+        </section>
+    </main>
+    <div id="compModal" class="modal-overlay" onclick="closeModalOnOutside(event)">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <div class="modal-content"><div id="modalBody"></div></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
