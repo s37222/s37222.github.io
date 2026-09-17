@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลส่วนตัว - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .profile-header-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+       
+        .profile-circle-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
+        }
+
+        /* ปรับขนาดโลโก้ทักษะและความสามารถให้ใหญ่ขึ้น */
+        .skill-icon {
+            height: 48px;
+            width: auto;
+            vertical-align: middle;
+            margin-left: 12px;
+            object-fit: contain;
+        }
+
+        /* ปรับขนาดโลโก้โรงเรียนให้ใหญ่ขึ้น */
+        .school-icon {
+            height: 65px;
+            width: auto;
+            vertical-align: middle;
+            margin-left: 15px;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+
+        .skill-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .edu-school-line {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 1.05rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">KMITL.IOTE // PORTFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="me.html" class="active">ข้อมูลส่วนตัว</a></li>
+                <li><a href="univesity.html">เป้าหมาย IOTE</a></li>
+                <li><a href="port.html">ผลงานการแข่งขัน</a></li>
+                <li><a href="Certificates.html">การอบรม</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="file2" class="active">
+            <h2>ข้อมูลส่วนตัว (Personal Profile)</h2>
+            
+            
+            <div class="profile-header-container">
+                <img src="me.jpg" alt="พัสกร เนื่องจำนงค์" class="profile-circle-img" onerror="this.src='https://via.placeholder.com/140?text=Profile'">
+                <div>
+                    <h3 style="margin: 0 0 5px 0; color: var(--primary-color, #333);">พัสกร เนื่องจำนงค์</h3>
+                    <p style="margin: 0; color: #666;"></p>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="info-card">
+                    <span class="badge">PROFILE DATA</span>
+                    <p><strong>ชื่อ-นามสกุล:</strong> นายพัสกร เนื่องจำนงค์</p>
+                    <p><strong>อายุ:</strong> 17 ปี</p>
+                    <p><strong>วันเกิด:</strong> 12 มีนาคม 2552</p>
+                    <p><strong>สถานศึกษา:</strong> โรงเรียนบ้านบึง อุตสาหกรรมนุเคราะห์</p>
+                    <p><strong>แผนการเรียน:</strong> วิทยาการคอมพิวเตอร์และวิศวกรรม (CSE)</p>
+                </div>
+                <div class="info-card">
+                    <span class="badge">SKILLS & HOBBIES</span>
+                    <h3>งานอดิเรก</h3>
+                    <ul>
+                        <li>การต่อวงจรโดยใช้บอร์ด ESP-32</li>
+                        <li>ดูหนัง, ฟังเพลง, เล่นกีต้าร์</li>
+                    </ul>
+                    <h3>ทักษะและความสามารถ</h3>
+                    <ul class="skill-list">
+                        <li><span>การเขียนภาษา Python ขั้นพื้นฐาน</span> <img src="python.png" alt="Python" class="skill-icon" onerror="this.style.display='none'"></li>
+                        <li><span>การใช้โปรแกรมตัดต่อเครือ Adobe</span> <img src="adobe.png" alt="Adobe" class="skill-icon" onerror="this.style.display='none'"></li>
+                        <li><span>ใช้โปรแกรม 3Ds Max</span> <img src="3ds-max-logo.png" alt="3Ds Max" class="skill-icon" onerror="this.style.display='none'"></li>
+                        <li><span>ความคิดสร้างสรรค์</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="info-card" style="margin-top: 20px;">
+                <span class="badge">EDUCATION HISTORY</span>
+                <h3>ประวัติการศึกษา</h3>
+                <div class="timeline-item">
+                    <p class="edu-school-line"><strong>ระดับประถมศึกษา:</strong> โรงเรียนต้นกล้าพัฒนา <img src="tonkla.png" alt="โรงเรียนต้นกล้าพัฒนา" class="school-icon" onerror="this.style.display='none'"></p>
+                    <p>เกรดเฉลี่ยสะสม: 2.70</p>
+                </div>
+                <div class="timeline-item">
+                    <p class="edu-school-line"><strong>ระดับมัธยมศึกษาตอนต้น:</strong> โรงเรียนวัฒนดรุณวิทย์ <img src="wd.png" alt="โรงเรียนวัฒนดรุณวิทย์" class="school-icon" onerror="this.style.display='none'"></p>
+                    <p>เกรดเฉลี่ยสะสม: 3.08</p>
+                </div>
+                <div class="timeline-item">
+                    <p class="edu-school-line"><strong>ระดับมัธยมศึกษาตอนปลาย:</strong> โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์" <img src="banbung.png" alt="โรงเรียนบ้านบึง" class="school-icon" onerror="this.style.display='none'"></p>
+                    <p>เกรดเฉลี่ยสะสม: 3.01 (4 เทอม)</p>
+                </div>
+            </div>
+            <a href="univesity.html" class="btn">มหาลัยที่อยากเข้า &gt;&gt;</a>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
